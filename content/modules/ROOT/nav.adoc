@@ -5,7 +5,7 @@
 * xref:index.adoc[Setup & Overview]
 
 // OpenShift Virtualization
-* xref:11-virtualization.adoc[Virtualization]
+* xref:01-virtualization.adoc[Virtualization]
 
 // Conclusion
 * xref:99-conclusion.adoc[Wrap Up]
