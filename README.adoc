@@ -1,56 +1,29 @@
-= OpenShift Ops Day Roadshow
+= OpenShift Virtualization Workshop
 
-Showroom content for the OpenShift Ops Day Roadshow, covering Day 2 operations for OpenShift administrators.
+A focused hands-on workshop covering OpenShift Virtualization (OCP Virt) for running virtual machines alongside containers on the same platform.
 
 == Workshop Overview
 
-A comprehensive modular workshop for OpenShift administrators. Modules are selectable at catalog order time so instructors can tailor the content to their audience.
+This workshop demonstrates how to run virtual machines on OpenShift using OpenShift Virtualization (based on KubeVirt). Learn how VMs integrate with Kubernetes primitives and can be managed with the same tools used for containers.
 
-=== Available Modules
+**Duration:** 45-60 minutes total
 
-*Getting Started*
+=== Workshop Content
 
-* *link:content/modules/ROOT/pages/index.adoc[Setup & Overview]* (15-20 min) - Lab access, Showroom interface, CLI verification, platform overview, console, monitoring, registry, routing, upgrades, operator ecosystem
-* *link:content/modules/ROOT/pages/01-installation.adoc[01 - Installation & Verification]* (10 min) - ClusterOperator health, node status, etcd metrics, storage provisioning, update channels
+* *link:content/modules/ROOT/pages/index.adoc[Setup & Overview]* (10-15 min) - Lab access, cluster verification, virtualization installation check
+* *link:content/modules/ROOT/pages/11-virtualization.adoc[OpenShift Virtualization]* (20-25 min) - VM creation with InstanceTypes, pod integration, unified monitoring, networking with Services and Routes, live migration, VM cloning, and snapshots
+* *link:content/modules/ROOT/pages/99-conclusion.adoc[Wrap Up]* (5 min) - Summary, key takeaways, next steps
 
-*Core Operations*
+=== What You'll Learn
 
-* *link:content/modules/ROOT/pages/02-app-mgmt.adoc[02 - Application Management]* (15-20 min) - Deployment, Routes with TLS, scaling, self-healing, probes, rollback, PodDisruptionBudgets
-* *link:content/modules/ROOT/pages/03-ingress-loadbalancing.adoc[03 - Ingress & Load Balancing]* (25 min) - Ingress Controller, Routes with TLS termination, rate limiting, IP allowlist, Services
-* *link:content/modules/ROOT/pages/04-network-security.adoc[04 - Network Security]* (10-15 min) - OVN-Kubernetes, NetworkPolicy, AdminNetworkPolicy, EgressFirewall, EgressIP
-* *link:content/modules/ROOT/pages/05-debugging-troubleshooting.adoc[05 - Debugging & Troubleshooting]* (10-15 min) - Diagnostic toolkit, fixing ImagePullBackOff, CrashLoopBackOff, resource constraints, SCC permissions
-* *link:content/modules/ROOT/pages/06-gitops.adoc[06 - OpenShift GitOps]* (10-15 min) - ArgoCD, app deployment from Git, drift detection, self-healing
-
-*Identity & Access*
-
-* *link:content/modules/ROOT/pages/07-ldap-authentication.adoc[07 - LDAP Authentication]* (15-20 min) - OAuth configuration, LDAP structure, group sync, RBAC
-* *link:content/modules/ROOT/pages/08-oidc-authentication.adoc[08 - OIDC Authentication]* (15-20 min) - Red Hat build of Keycloak deployment, OIDC configuration, group sync, RBAC
-
-*Day 2 Operations*
-
-* *link:content/modules/ROOT/pages/09-observability.adoc[09 - Observability & Logging]* (35-40 min) - Prometheus metrics, dashboards, user workload monitoring, Alertmanager, OpenTelemetry distributed tracing, logging stack
-* *link:content/modules/ROOT/pages/10-performance-tuning.adoc[10 - Performance Tuning]* (15-20 min) - Resource diagnostics, VPA right-sizing, HPA autoscaling, performance monitoring
-
-*Advanced Topics*
-
-* *link:content/modules/ROOT/pages/11-virtualization.adoc[11 - Virtualization]* (20-25 min) - VM creation, networking, live migration, cloning, snapshots
-* *link:content/modules/ROOT/pages/12-developer-hub.adoc[12 - Developer Hub]* (25-30 min) - Software catalog, Topology plugin, software templates, platform architecture
-* *link:content/modules/ROOT/pages/13-openshift-lightspeed.adoc[13 - OpenShift Lightspeed]* (15-20 min) - AI assistant, OLSConfig creation, console integration
-* *link:content/modules/ROOT/pages/14-acm.adoc[14 - ACM Multi-Cluster Management]* (30 min) - ACM, hosted control planes, VM management, GitOps app deployment, policy-based governance
-* *link:content/modules/ROOT/pages/15-acs.adoc[15 - Advanced Cluster Security]* (20 min) - Workload scanning with RHACS, compliance, runtime security
-* *link:content/modules/ROOT/pages/16-secrets-management.adoc[16 - Secrets Management (HashiCorp Vault)]* (25 min) - Vault Helm deploy on OpenShift, Kubernetes auth, pod secret injection
-* *link:content/modules/ROOT/pages/17-ztwim.adoc[17 - Zero-Trust Database Access with SPIFFE mTLS]* (45 min) - ZTWIM operator, SPIFFE/SPIRE workload identity, PostgreSQL mTLS without passwords
-
-== Module Selection
-
-Modules are selectable at catalog order time. The navigation dynamically shows/hides content based on which modules are enabled.
-
-Catalog parameters (`module_enable_*`) control both:
-
-* Which operators/workloads get deployed
-* Which content appears in the workshop navigation
-
-See link:content/modules/ROOT/nav.adoc[nav.adoc] for the conditional navigation logic using `ifeval`.
+* Create virtual machines using cloud-style InstanceTypes
+* Understand how VMs run as pods in Kubernetes
+* Use the same networking (Services, Routes) for VMs and containers
+* Monitor VMs with the same Prometheus stack as containers
+* Perform live migration for zero-downtime node maintenance
+* Clone VMs for rapid dev/test provisioning
+* Use snapshots for point-in-time rollback before patches or changes
+* Manage everything with familiar `oc` commands
 
 == Local Development
 

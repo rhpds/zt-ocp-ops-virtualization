@@ -1,12 +1,12 @@
-name: openshift-days-ops-track
-title: OpenShift Ops Day Roadshow
+name: openshift-virtualization
+title: OpenShift Virtualization
 version: main
 nav:
   - modules/ROOT/nav.adoc
 
 asciidoc:
   attributes:
-    lab_name: "OpenShift Ops Day Roadshow"
+    lab_name: "OpenShift Virtualization"
     release-version: main
     page-pagination: true
     guid: my-guid

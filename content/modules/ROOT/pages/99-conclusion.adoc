@@ -1,11 +1,44 @@
-= Thank You for Completing the Workshop
+= Wrap Up
 
-**Thank you for attending the OpenShift Ops Day Roadshow.**
+**Thank you for completing the OpenShift Virtualization workshop!**
 
-We hope you found the hands-on exercises valuable. If you have any further questions, please ask your instructor.
+== What You Accomplished
 
-== Additional Resources
+In this hands-on workshop, you:
 
-* link:https://docs.redhat.com/en/documentation/openshift_container_platform/4.20[OpenShift Documentation, window=blank]
-* link:https://developers.redhat.com/learn/openshift[OpenShift Learning, window=blank]
+* **Created virtual machines** using cloud-style InstanceTypes and boot images
+* **Explored Kubernetes integration** by seeing how VMs run as pods with the same scheduler, networking, and RBAC
+* **Performed live migrations** to move running VMs between nodes with zero downtime
+* **Cloned VMs** to rapidly provision copies for dev/test environments
+* **Used snapshots** to capture point-in-time states and roll back after changes
+* **Managed VMs and containers** using the same tools - `oc` commands, Services, Routes, and Prometheus monitoring
+
+== Key Takeaways
+
+OpenShift Virtualization enables you to:
+
+* **Run VMs and containers together** on one platform - same skills, same tools, same management
+* **Migrate legacy workloads** using the Migration Toolkit for Virtualization (MTV) when ready
+* **Eliminate separate virtualization infrastructure** - no need for separate hypervisor platforms
+* **Use familiar cloud patterns** - InstanceTypes, volume snapshots, live migration, and unified monitoring
+
+== Next Steps
+
+**Migration Planning**
+
+If you're considering migrating existing VMs to OpenShift:
+
+* Explore the **Migration Toolkit for Virtualization (MTV)** for automated VM migration from VMware, RHEV, or other platforms
+* Review the **OpenShift Virtualization Roadmap** for upcoming features
+* Plan your **hybrid workload strategy** - which workloads to containerize vs run as VMs
+
+**Additional Learning**
+
+* link:https://docs.redhat.com/en/documentation/openshift_container_platform/4.20/html/virtualization/index[OpenShift Virtualization Documentation, window=blank]
+* link:https://docs.redhat.com/en/documentation/migration_toolkit_for_virtualization/[Migration Toolkit for Virtualization, window=blank]
+* link:https://developers.redhat.com/learn/openshift[OpenShift Learning Resources, window=blank]
 * link:https://www.redhat.com/en/services/training-and-certification[Red Hat Training & Certification, window=blank]
+
+**Questions?**
+
+If you have any questions about OpenShift Virtualization or need help planning your migration, please reach out to your Red Hat account team or instructor.
