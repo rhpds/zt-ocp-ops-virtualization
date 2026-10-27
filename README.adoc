@@ -11,7 +11,7 @@ This workshop demonstrates how to run virtual machines on OpenShift using OpenSh
 === Workshop Content
 
 * *link:content/modules/ROOT/pages/index.adoc[Setup & Overview]* (10-15 min) - Lab access, cluster verification, virtualization installation check
-* *link:content/modules/ROOT/pages/11-virtualization.adoc[OpenShift Virtualization]* (20-25 min) - VM creation with InstanceTypes, pod integration, unified monitoring, networking with Services and Routes, live migration, VM cloning, and snapshots
+* *link:content/modules/ROOT/pages/01-virtualization.adoc[OpenShift Virtualization]* (20-25 min) - VM creation with InstanceTypes, pod integration, unified monitoring, networking with Services and Routes, live migration, VM cloning, and snapshots
 * *link:content/modules/ROOT/pages/99-conclusion.adoc[Wrap Up]* (5 min) - Summary, key takeaways, next steps
 
 === What You'll Learn
