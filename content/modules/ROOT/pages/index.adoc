@@ -130,9 +130,7 @@ You can also verify in the console:
 
 1. Switch to the **Administrator** perspective (top-left dropdown)
 2. Navigate to **Fleet Virtualization** (or **Virtualization** if ACM is not enabled) in the left sidebar
-3. You should see the virtualization dashboard
-
-image::virt-dashboard.png[Virtualization Dashboard, link=self, window=blank]
+3. You should see the virtualization overview showing VirtualMachines and related resources
 
 == What's Next
 
